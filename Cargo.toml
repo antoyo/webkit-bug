@@ -1,0 +1,11 @@
+[package]
+authors = ["Antoni Boucher <antoni.boucher@adgear.com>"]
+name = "webkit-bug"
+version = "0.1.0"
+
+[dependencies]
+gtk = "^0.1.3"
+webkit2gtk = { git = "https://github.com/antoyo/webkit2gtk-rs" }
+
+[features]
+default = ["webkit2gtk/v2_6"]
