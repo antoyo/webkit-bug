@@ -18,7 +18,7 @@ pub fn web_extension_initialize(extension: WebExtension, user_data: Variant) {
                 let event = document.create_event("MouseEvent").unwrap();
                 let window = document.get_default_view().unwrap();
                 let event = event.downcast::<DOMMouseEvent>().unwrap();
-                event.init_mouse_event("click", true, true, &window, 0, 0, 0, 0, 0, false, false, false, false, 0, &link);
+                event.init_mouse_event("click", true, true, &window, 0, 0, 0, 0, 0, true, false, false, false, 0, &link);
                 link.dispatch_event(&event).unwrap();
             }
         });
